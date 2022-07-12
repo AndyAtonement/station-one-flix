@@ -3,11 +3,11 @@ using StationOneFlix.Models;
 
 namespace StationOneFlix.Data
 {
-    public class Context : DbContext
+    public class DataContext : DbContext
     {
         public DbSet<Filme> Filmes { get; set; }
 
-        public Context(DbContextOptions<Context> options) : base(options)
+        public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
             Database.EnsureCreated();
         }

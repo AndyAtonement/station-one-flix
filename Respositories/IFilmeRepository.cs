@@ -7,7 +7,7 @@ namespace StationOneFlix.Respositories
         Task<Filme> GetById(long id);
         Task<IEnumerable<Filme>> GetAll();
         Task<Filme> Create(Filme filme);
-        Task<Filme> Update(Filme filme);
-        Task<Filme> Delete(long id);
+        Task Update(Filme filme);
+        Task Delete(long id);
     }
 }

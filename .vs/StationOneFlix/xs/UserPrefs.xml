@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{D960FBA5-5BD0-452F-AC7C-7ACED2FBBFD6}|Default">
+  <MonoDevelop.Ide.ItemProperties.StationOneFlix PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/FilmesController.cs">
+    <Files>
+      <File FileName="Controllers/FilmesController.cs" Line="35" Column="72" />
+      <File FileName="Data/DataContext.cs" Line="1" Column="1" />
+      <File FileName="Respositories/IFilmeRepository.cs" Line="12" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="StationOneFlix" expanded="True">
+            <Node name="StationOneFlix" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Respositories" expanded="True">
+                <Node name="IFilmeRepository.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
