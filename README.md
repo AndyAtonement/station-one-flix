@@ -1,8 +1,14 @@
 # Station One Flix
-An individual test for Station One.
+Teste individual para Station One.
 
-The purpose of the test is to see the level of the candidates.
+<img src="https://github.com/AndyAtonement/station-one-flix/blob/master/back.png" width="500px" />
 
-What do i need to do?
+Decidi que o projeto será um ASP.NET Core web api.
 
-![image](https://github.com/AndyAtonement/station-one-flix/blob/master/back.png)
+### O que decidi usar?
+
+* Repository Pattern
+* [Asynchronous programming](https://docs.microsoft.com/en-us/dotnet/csharp/async)
+
+1. [Added-The-project](https://github.com/AndyAtonement/station-one-flix/tree/Added-the-project)
+      * Adicioneio a base do projeto.
