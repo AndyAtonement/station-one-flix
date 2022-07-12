@@ -9,6 +9,7 @@ Decidi que o projeto será um ASP.NET Core web api.
 
 * [Repository Pattern](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design)
 * [Asynchronous programming](https://docs.microsoft.com/en-us/dotnet/csharp/async)
+* CRUD
 
 1. [Added-The-project](https://github.com/AndyAtonement/station-one-flix/tree/Added-the-project)
       * Adicioneio a base do projeto.
