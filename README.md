@@ -3,8 +3,6 @@ Teste individual para Station One.
 
 <img src="https://github.com/AndyAtonement/station-one-flix/blob/master/back.png" width="500px" />
 
-Decidi que o projeto será um ASP.NET Core web api.
-
 ### Técnologias Implementadas
 * .NET 6.0.7
 * ASP.NET 6.0.7
