@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "StationOneFlix/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.InMemory": "6.0.7",
           "Swashbuckle.AspNetCore": "6.3.1",
           "Microsoft.EntityFrameworkCore": "6.0.7"
         },
@@ -41,6 +42,17 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/6.0.7": {},
+      "Microsoft.EntityFrameworkCore.InMemory/6.0.7": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.7"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "assemblyVersion": "6.0.7.0",
+            "fileVersion": "6.0.722.31501"
+          }
+        }
+      },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},
       "Microsoft.Extensions.Caching.Abstractions/6.0.0": {
         "dependencies": {
@@ -175,6 +187,13 @@
       "sha512": "sha512-VAOrGma8mRspUb/9quwIr21UZVqfWOcRQqhcYNkHBUD7woenwFTBvntiC9h2Ebtvj/BrRfezqjaHpWVvPSg4dw==",
       "path": "microsoft.entityframeworkcore.analyzers/6.0.7",
       "hashPath": "microsoft.entityframeworkcore.analyzers.6.0.7.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/6.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-n0hvDcK/tyrNMAFH0hmT0RRiK2ob8t+AwRbwn8uzQ47lvpfjvMRm8Mc113hb+zYsEBYdztthy69byTXNmjAsLw==",
+      "path": "microsoft.entityframeworkcore.inmemory/6.0.7",
+      "hashPath": "microsoft.entityframeworkcore.inmemory.6.0.7.nupkg.sha512"
     },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
       "type": "package",

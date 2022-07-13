@@ -6,20 +6,19 @@ using StationOneFlix.Respositories;
 
 namespace StationOneFlix.Controllers
 {
-    [Route("api/v1/[controller]")]
+    [Route("api/v1/filmes")]
     [ApiController]
     public class FilmesController : ControllerBase
     {
         private readonly IFilmeRepository _filmeRepository;
-        private DataContext _context;
 
         public FilmesController(IFilmeRepository filmeRepository)
         {
             _filmeRepository = filmeRepository;
         }
 
-        [Route("listagem-de-filmes")]
-        [HttpGet("{id}")]
+        [Route("listagem-de-filmes/{id}")]
+        [HttpGet]
         public async Task<IActionResult> ListarFilmeById(long id)
         {
             var filme = await _filmeRepository.GetById(id);
@@ -27,33 +26,49 @@ namespace StationOneFlix.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> ListarFilmes()
+        public async Task<IEnumerable<Filme>> ListarFilmes()
         {
-            var filmes = await _filmeRepository.GetAll();
-            return Ok(filmes);
+            return await _filmeRepository.GetAll();
         }
 
         [Route("cadastro-de-filmes")]
         [HttpPost]
         public async Task<IActionResult> CadastrarFilme([FromBody] Filme filme)
         {
-            var filmeCriado = await _filmeRepository.Create(filme);
-            return CreatedAtAction(nameof(_filmeRepository.GetAll), new { id = filmeCriado.Id }, filmeCriado);
+            if(filme.Id == 0)
+            {
+                var novoFilme = await _filmeRepository.Create(filme);
+                return CreatedAtAction(nameof(ListarFilmes), new { id = novoFilme.Id }, novoFilme);
+            }
+
+            return BadRequest();
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> EditarFilme([FromBody] Filme filme)
+        [HttpPut]
+        public async Task<IActionResult> EditarFilme([FromBody] Filme filme, long id)
         {
-            _context.Entry(filme).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
-            return Ok(filme);
+            if(id != filme.Id)
+            {
+                return BadRequest();
+            }
+
+            await _filmeRepository.Update(filme);
+
+            return NoContent();
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete]
         public async Task<IActionResult> DeletarFilme(long id)
         {
             var filmeDeletado = await _filmeRepository.GetById(id);
-            return Ok(filmeDeletado);
+            if (filmeDeletado != null)
+            {
+                return NotFound();
+            }
+
+            await _filmeRepository.Delete(filmeDeletado.Id);
+
+            return NoContent();
         }
     }
 }
