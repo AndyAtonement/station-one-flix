@@ -11,6 +11,7 @@ Decidi que o projeto será um ASP.NET Core web api.
 * ASP.NET WebApi Core
 * Swagger UI
 * Asynchronous programming
+* CRUD
 
 ### Arquitetura
 * Repository Pattern
