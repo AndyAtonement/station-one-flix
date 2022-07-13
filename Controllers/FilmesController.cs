@@ -61,7 +61,7 @@ namespace StationOneFlix.Controllers
         public async Task<IActionResult> DeletarFilme(long id)
         {
             var filmeDeletado = await _filmeRepository.GetById(id);
-            if (filmeDeletado != null)
+            if (filmeDeletado == null)
             {
                 return NotFound();
             }
