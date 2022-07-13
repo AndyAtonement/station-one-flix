@@ -17,3 +17,4 @@ Decidi que o projeto será um ASP.NET Core web api.
       * implementação da interface IFilmeRepository, classe FilmeRepository e métodos assícronos com CRUD.
 3. [Implementation-of-the-FilmeController](https://github.com/AndyAtonement/station-one-flix/tree/Implementation-of-the-FilmeController)
       * Implementação da FilmeController e algumas outras modificações em FilmeRespository.
+4.[Adding-changes-and-everything-is-working-fine](https://github.com/AndyAtonement/station-one-flix/tree/Adding-changes-and-everything-is-working-fine)
