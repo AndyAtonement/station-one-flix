@@ -13,8 +13,7 @@ Decidi que o projeto será um ASP.NET Core web api.
 * Asynchronous programming
 
 ### Arquitetura
-* Repository
-* CRUD
+* Repository Pattern
 
 ### Branches
 1. [Added-The-project](https://github.com/AndyAtonement/station-one-flix/tree/Added-the-project)
