@@ -6,7 +6,7 @@ Teste individual para Station One.
 ### Técnologias Implementadas
 * .NET 6.0.7
 * ASP.NET 6.0.7
-* ASP.NET WebApi Core
+* ASP.NET Web Api
 * Swagger UI
 * Asynchronous programming
 * CRUD
